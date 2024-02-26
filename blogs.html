@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Blog-page</title>
+     <!-- CSS link  -->
+     <link rel="stylesheet" href="css/home.css">
+     <!-- Utility css link  -->
+     <link rel="stylesheet" href="css/utils.css">
+     <!-- blog css  -->
+     <link rel="stylesheet" href="css/blog.css">
+     <!-- Responsive css  -->
+     <link rel="stylesheet" href="css/responsive.css">
+     <!-- Tailwind css cdn  -->
+     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+     <!-- Font awesome cdn  -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+          integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+     <!-- =============  Starting Header section  =============  -->
+     <div id="header-container" class="header-container flex align-items ">
+          <div class="header common-width flex  flex-between  mx-auto align-items">
+               <!-- hamburger  -->
+               <div class="hamburger-icon cursor-pointer">
+                    <i class="fa-solid fa-bars common-icn"></i>
+               </div>
+               <!-- cross icon  -->
+               <div class="menus flex align-items">
+                    <div class="cross-icon">
+                         <i class="fa-solid fa-xmark common-icn"></i>
+                    </div>
+                    <div class="logo" style="cursor:pointer;"><img src="images/logo.png"
+                              onclick="return location.href='/home.html'"></div>
+
+                    <li class="list-items txt-black"><a href="/home.html">Home</a></li>
+                    <li class="list-items txt-black"><a href="/about.html">About</a></li>
+                    <li class="list-items txt-black"><a href="/blogs.html">Blogs</a></li>
+                    <li class="list-items txt-black"><a href="/contact.html">Contact</a></li>
+               </div>
+               <div class="actions flex flex-between">
+                    <div class="searchBar flex flex-between align-items">
+                         <input type="text" class="txt-gray form-input" placeholder="Search any blogs..">
+                         <button class="common-btn">Search</button>
+                    </div>
+               </div>
+               <div class="create-blog-btn">
+                    <button class="create-blog common-btn common-small-btn main-create-btn">Create</button>
+               </div>
+          </div>
+     </div>
+     <!-- =============  Ending Header section   ============= -->
+
+
+     <!-- ============== Starting blogs area  ============== -->
+     <div id="blog-container" class="w-full">
+          <!-- create-blog form  -->
+          <div class="add-project-area-container create-blog-area w-full flex-box">
+               <div class="add-project-area flex align-items flex-between  flex-col mx-auto">
+                    <div class="cross-icon">
+                         <svg xmlns="http://www.w3.org/2000/svg" height="25" width="16" viewBox="0 0 384 512">
+                              <path
+                                   d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                         </svg>
+                    </div>
+                    <div class="input-items title-input fill-info"><input type="text" placeholder="Project Title"></div>
+
+                    <div class="input-items description-input fill-info"><textarea
+                              placeholder="Project-description"></textarea></div>
+
+                    <div class="input-items url-input fill-info"><input type="text"
+                              placeholder="Project source code url..."></div>
+
+                    <div class="input-items preview-url-input fill-info"><input type="text"
+                              placeholder="Project preview url..."></div>
+
+                    <div class="input-items image-input"><input type="file"></div>
+                    <div class="input-items">
+                         <button
+                              class="common-btn  main-project-add-btn common-small-btn add-project add-blog-btn">Add</button>
+                    </div>
+               </div>
+          </div>
+
+          <!-- default-blogs  -->
+          <div class="blog common-width mx-auto">
+               <!-- add blogs  -->
+               <div class="add-blogs">
+
+               </div>
+
+               <div class="main-blog">
+                    <div class="blog-items flex flex-between align-items">
+                         <div class="blog-image"><img src="images/school-image.png"></div>
+                         <div class="blog-text">
+                              <h2 class="blog-name">First blog</h2>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem asperiores magnam
+                                   iusto consectetur provident ea a ut harum hic fuga veritatis quae blanditiis maxime,
+                                   aliquam sit eligendi quia doloribus? Tempora.</p>
+
+                              <div class="project-buttons">
+                                   <button class="preview common-btn common-small-btn">Preview</button>
+                                   <button class="source-code common-btn common-small-btn">Source code</button>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="blog-items flex flex-between align-items">
+                         <div class="blog-image"><img src="images/school-image.png"></div>
+                         <div class="blog-text">
+                              <h2 class="blog-name">First blog</h2>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem asperiores magnam
+                                   iusto consectetur provident ea a ut harum hic fuga veritatis quae blanditiis maxime,
+                                   aliquam sit eligendi quia doloribus? Tempora.</p>
+
+                              <div class="project-buttons">
+                                   <button class="preview common-btn common-small-btn">Preview</button>
+                                   <button class="source-code common-btn common-small-btn">Source code</button>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="blog-items flex flex-between align-items">
+                         <div class="blog-image"><img src="images/school-image.png"></div>
+                         <div class="blog-text">
+                              <h2 class="blog-name">First blog</h2>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem asperiores magnam
+                                   iusto consectetur provident ea a ut harum hic fuga veritatis quae blanditiis maxime,
+                                   aliquam sit eligendi quia doloribus? Tempora.</p>
+
+                              <div class="project-buttons">
+                                   <button class="preview common-btn common-small-btn">Preview</button>
+                                   <button class="source-code common-btn common-small-btn">Source code</button>
+                              </div>
+                         </div>
+                    </div>
+
+
+               </div>
+          </div>
+     </div>
+     <!-- ============== Ending blogs area  ============== -->
+
+
+     <!--  ============== Starting footer section  ==============  -->
+     <footer class="text-gray-600 body-font">
+          <div
+               class="container px-5 py-8 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+               <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+                    <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                         <img src="images/logo.png" class="logo" style="width: 55px;">
+                         <span class="ml-3 text-xl">Blogs</span>
+                    </a>
+                    <p class="mt-2 text-sm text-gray-500">developerAman Raj blog website 2023.
+                    </p>
+               </div>
+
+               <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+                    <div class="lg:w-1/3 md:w-1/3 w-full footer-items px-4">
+                         <h2 class="title-font font-medium text-gray-900 tracking-widest  mb-4">Projects</h2>
+                         <nav class="list-none mb-10">
+                              <li>
+                                   <a class="text-gray-600 hover:text-gray-900">Special projects</a>
+                              </li>
+                              <li>
+                                   <a class="text-gray-600 hover:text-gray-900">Javascript projects</a>
+                              </li>
+                              <li>
+                                   <a class="text-gray-600 hover:text-gray-900">Advance projects</a>
+                              </li>
+                              <li>
+                                   <a class="text-gray-600 hover:text-gray-900">All projects</a>
+                              </li>
+                         </nav>
+                    </div>
+                    <div class="lg:w-1/3 md:w-1/3 w-full footer-items px-4">
+                         <h2 class="title-font font-medium text-gray-900 tracking-widest  mb-4">Importnt links
+                         </h2>
+                         <nav class="list-none mb-10">
+                              <li>
+                                   <a class="text-gray-600 hover:text-gray-900">Home</a>
+                              </li>
+                              <li>
+                                   <a class="text-gray-600 hover:text-gray-900">About</a>
+                              </li>
+                              <li>
+                                   <a class="text-gray-600 hover:text-gray-900">Blogs</a>
+                              </li>
+                              <li>
+                                   <a class="text-gray-600 hover:text-gray-900">Contact</a>
+                              </li>
+                         </nav>
+                    </div>
+                    <div class="lg:w-1/3 md:w-1/3 w-full footer-items px-4">
+                         <h2 class="title-font font-medium text-gray-900 tracking-widest  mb-4">Information</h2>
+                         <nav class="list-none mb-10">
+                              <li>
+                                   <a class="text-gray-600 hover:text-gray-900">Work</a>
+                              </li>
+                              <li>
+                                   <a class="text-gray-600 hover:text-gray-900">Address</a>
+                              </li>
+                              <li>
+                                   <a class="text-gray-600 hover:text-gray-900">Mobile no</a>
+                              </li>
+                              <li>
+                                   <a class="text-gray-600 hover:text-gray-900">Others</a>
+                              </li>
+                         </nav>
+                    </div>
+               </div>
+
+          </div>
+
+          <div class="bg-gray-100">
+               <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+                    <p class="text-gray-500 text-sm text-center sm:text-left">© 2020 developerAman —
+                         <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 ml-1"
+                              target="_blank">all rights reserved</a>
+                    </p>
+                    <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+                         <a class="text-gray-500">
+                              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                   class="w-5 h-5" viewBox="0 0 24 24">
+                                   <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                              </svg>
+                         </a>
+                         <a class="ml-3 text-gray-500">
+                              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                   class="w-5 h-5" viewBox="0 0 24 24">
+                                   <path
+                                        d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                                   </path>
+                              </svg>
+                         </a>
+                         <a class="ml-3 text-gray-500">
+                              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                   stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                   <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                                   <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                              </svg>
+                         </a>
+                         <a class="ml-3 text-gray-500">
+                              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round"
+                                   stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                                   <path stroke="none"
+                                        d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                                   </path>
+                                   <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                              </svg>
+                         </a>
+                    </span>
+               </div>
+          </div>
+     </footer>
+     <!--  ============== Ending footer section  ==============  -->
+
+     <!-- Javascript link  -->
+     <script src="./js/blog.js" defer></script>
+     <script src="./js/home.js"></script>
+</body>
+
+</html>

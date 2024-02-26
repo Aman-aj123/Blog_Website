@@ -1,0 +1,52 @@
+#blog-container {
+     margin-top: 28px; 
+}
+
+.create-blog-area {
+     display: none !important;
+}
+
+/* show Porject  class  */
+.show-create-project-area {
+     display: flex !important;
+}
+
+.add-blogs {
+     display: flex;
+     flex-direction: column-reverse;
+}
+
+.blog-items {
+     margin-bottom: 28px;
+     gap: 15px;
+}
+
+.blog-items,
+.main-blog {
+     width: 100%;
+}
+
+.blog-items .blog-text {
+     width: 400px;
+}
+
+.blog-items .blog-text .blog-name {
+     font-weight: 500;
+     font-size: 22px;
+     margin-bottom: 2px;
+}
+
+.blog-items .blog-image {
+     box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+     width: 50%;
+     min-width: 250px;
+     height: 245px;
+     border-radius: 4px;
+     overflow: hidden;
+}
+
+.blog-items .blog-image img {
+     object-fit: cover;
+     width: 100%;
+     height: 100%;
+}

@@ -1,0 +1,319 @@
+* {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html,
+body {
+     width: 100%;
+     /* overflow: hidden;  */
+     background: linear-gradient(45deg, rgb(239 250 250 / 61%), rgba(255, 255, 255, 0.871))
+}
+
+:root {
+     --txt-white: white;
+     --txt-black: black;
+     --txt-gray: rgb(213, 209, 209);
+     --header-bg: white;
+     --searchBar-bg: rgb(246 242 242);
+}
+
+.txt-white {
+     color: var(--txt-white);
+}
+
+.txt-black {
+     color: var(--txt-black);
+}
+
+
+
+/* =========== Starting header section ===========  */
+#header-container {
+     width: 100%;
+     height: 78px;
+     background: transparent;
+}
+
+.hamburger-icon {
+     display: none;
+     cursor: pointer;
+}
+
+.cross-icon {
+     position: absolute;
+     left: 12px;
+     top: 13px;
+     display: none;
+     cursor: pointer;
+}
+
+.logo {
+     width: 55px;
+}
+
+.logo img {
+     width: 100%;
+}
+
+
+.header .menus {
+     gap: 15px;
+     font-weight: 500 !important;
+}
+
+.header .menus li {
+     list-style: none;
+}
+
+.header .menus li a {
+     text-decoration: none;
+     font-size: 17px;
+     letter-spacing: .50px;
+     cursor: pointer;
+     transition: .1s ease-in-out;
+     position: relative;
+}
+
+.header .menus li a:hover {
+     opacity: .6;
+}
+
+
+.searchBar {
+     background: var(--searchBar-bg);
+     border-radius: 5px;
+     padding-left: 9px;
+     width: 40vw;
+     min-width: 230px;
+     height: 37px;
+     overflow: hidden;
+}
+
+.searchBar input {
+     width: 100%;
+     height: 100%;
+     background: transparent;
+}
+
+.searchBar button {
+     height: 100%;
+     border-radius: 0px;
+     background: linear-gradient(131deg, deeppink, blue 124%);
+     color: rgb(230, 230, 230);
+}
+
+.create-blog-btn {
+     margin-left: 6px;
+}
+
+.create-blog-btn button {
+     background: rgb(24, 216, 216);
+     color: white;
+     letter-spacing: 1px;
+     border-radius: 23px;
+}
+
+/* =========== Ending header section  =========== */
+
+
+
+/* ============= Starting hero section ============= */
+#hero-container {
+     overflow: hidden;
+     padding: 45px 0;
+     position: relative;
+     align-items: center;
+}
+
+
+.hero-img {
+     width: 290px;
+     height: 267px;
+     overflow: hidden;
+     border-radius: 50%;
+     object-fit: cover;
+}
+
+.hero-img img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+}
+
+
+.hero .hero-text {
+     width: 420px;
+     line-height: 1.5;
+     color: #3a3636;
+     height: 100%;
+}
+
+.hero .hero-text h1 {
+     font-size: 32px;
+     font-weight: 500;
+}
+
+.hero .hero-text .dev-main-txt {
+     color: transparent;
+     background: linear-gradient(131deg, deeppink, blue 124%);
+     -webkit-background-clip: text;
+     font-size: 33px;
+}
+
+/* ============= Ending hero section ============= */
+
+
+
+
+/* =============== Starting blogs section  =============== */
+#blogs-container {
+     margin-top: 70px;
+}
+
+
+/* Add project area  */
+.add-project-area-container {
+     min-height: 100%;
+     position: fixed;
+     top: 0;
+     left: 0;
+     display: none !important;
+     backdrop-filter: blur(1px);
+}
+
+.show-create-project-area {
+     display: flex !important;
+}
+
+.show-add-project-area {
+     display: flex !important;
+}
+
+.add-project-area {
+     position: relative;
+     width: 55%;
+     min-width: 310px;
+     background: white;
+     box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+     border: 2px solid gainsboro;
+     border-radius: 6px;
+     padding: 15px 12px;
+}
+
+.add-project-area .cross-icon {
+     position: absolute;
+     top: 8px;
+     right: 10px;
+     cursor: pointer;
+}
+
+.add-project-area .add-project {
+     background: #f02719;
+     letter-spacing: 2px !important;
+}
+
+.add-project-area .input-items {
+     width: 91%;
+     margin-bottom: 15px;
+     border-radius: 6px;
+     overflow: hidden;
+}
+
+.add-project-area .fill-info {
+     background: rgb(180 160 160 / 10%);
+}
+
+.add-project-area .input-items input,
+textarea {
+     padding: 10px 13px;
+     outline: none;
+     border: none;
+     width: 100%;
+     background: transparent;
+}
+
+.add-project-area textarea {
+     height: 98px;
+     padding: 10px 13px;
+}
+
+.add-projects-btn {
+     margin-top: 13px;
+     margin-bottom: 20px;
+     border-radius: 21px !important;
+     background: rgb(29, 207, 207);
+}
+
+.common-project-items {
+     width: 456px;
+     height: fit-content;
+     padding: 0 0 0px 0;
+     margin-bottom: 28px;
+     border-radius: 8px;
+     overflow: hidden;
+     background: white;
+     box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+}
+
+.common-title {
+     margin-top: 45px;
+     margin-bottom: 10px;
+     font-size: 26px;
+     font-weight: 500 !important;
+     text-align: center;
+}
+
+.common-project-items .project-img {
+     width: 100%;
+     height: 210px;
+}
+
+.common-project-items .project-img img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+}
+
+.project-name {
+     margin: 10px 0;
+     font-size: 18px;
+     letter-spacing: .60px;
+     font-weight: 500;
+     color: rgb(15, 14, 14);
+}
+
+.project-text {
+     padding: 4px 8px;
+}
+
+.project-buttons {
+     margin: 10px 0;
+}
+
+.project-buttons button {
+     letter-spacing: .90px !important;
+}
+
+.project-buttons .preview {
+     background: rgb(33, 219, 33);
+     color: white;
+}
+
+.project-buttons .source-code {
+     color: white;
+     background: #f01010;
+     margin-left: 10px;
+}
+
+/* =============== Ending blogs section  =============== */
+
+
+/* ========== Starting footer section  ========== */
+.footer-items li a {
+     cursor: pointer;
+}
+
+/* ========== Ending footer section  ========== */

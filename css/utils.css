@@ -1,0 +1,100 @@
+.flex-box {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.flex-coln {
+     flex-direction: column;
+}
+
+.flex {
+     display: flex;
+}
+
+.flex-between {
+     justify-content: space-between;
+}
+
+.flex-around {
+     justify-content: space-around;
+}
+
+.align-items {
+     align-items: center;
+}
+
+.common-width {
+     width: 88%;
+}
+
+.common-btn {
+     font-size: 16px;
+     letter-spacing: .70px;
+     font-weight: 500;
+     padding: 8px 10px;
+     border-radius: 4px;
+     border: none;
+     outline: none;
+     color: white;
+     cursor: pointer;
+     transition: .1s ease-in-out;
+}
+
+.common-small-btn {
+     font-size: 13.70px;
+     padding: 6px 8px;
+}
+
+.common-btn:hover {
+     opacity: .7;
+}
+
+.mx-auto {
+     margin: auto;
+}
+
+.form-input {
+     border: none;
+     outline: none;
+     font-size: 17px;
+     letter-spacing: .50px;
+}
+
+.form-input::placeholder {
+     font-size: 16px;
+     letter-spacing: .50px;
+}
+
+.w-full {
+     width: 100%;
+}
+
+.flex-wrap {
+     flex-wrap: wrap;
+}
+
+.txt-center {
+     text-align: center;
+}
+
+.font-bold {
+     font-weight: bold;
+}
+
+
+
+.common-icn {
+     font-size: 26px;
+     transition: .1s ease-in-out;
+     padding: 4px 7px;
+     border-radius: 50%;
+}
+
+.common-icn:hover {
+     background: rgba(0, 0, 0, 0.1);
+}
+
+.hide-element{
+display: none;
+}
